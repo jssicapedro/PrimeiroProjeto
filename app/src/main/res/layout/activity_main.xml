@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="#ADD8E6"
+    android:background="@color/cinza_claro"
     tools:context=".MainActivity">
 
     <TextView
@@ -15,23 +15,30 @@
         android:layout_marginBottom="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/azul_escuro"
         android:text="Calculadora de IMC" />
 
     <EditText
         android:id="@+id/edtAltura"
         android:hint="Altura (m)"
+        android:textColorHint="@color/azul_médio"
         android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/azul_médio"
+        android:backgroundTint="@color/azul_médio"
         android:ems="10"
         android:inputType="numberDecimal"/>
 
     <EditText
         android:id="@+id/edtPeso"
         android:hint="Peso (Kg)"
+        android:textColorHint="@color/azul_médio"
         android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/azul_médio"
+        android:backgroundTint="@color/azul_médio"
         android:ems="10"
         android:inputType="numberDecimal"/>
 
@@ -40,12 +47,16 @@
         android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calcular"/>
+        android:backgroundTint="@color/azul_escuro"
+        android:text="Calcular"
+        android:textColor="@color/white"/>
 
     <TextView
         android:id="@+id/tResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/azul_médio"
+        android:backgroundTint="@color/azul_médio"
         android:textSize="12pt"/>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
